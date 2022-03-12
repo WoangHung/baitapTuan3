@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+    <div id="backgound">
+        <video autoplay muted loop>
+            <source src="./video/video_backgound.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <div class="header"> 
+                <tr>
+                     <img src="./img/textheader-01.png" alt="Không có ảnh" >
+                </tr>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div id="menu">
+        <ul class="root">
+            <li> 
+                <a href="">Phim</a>
+                <ul class ="menu_con">
+                    <li><a href="">Avenger EndGame</a></li>
+                    <li><a href="">Fast and Furious</a></li>
+                    <li><a href="">Way back Home</a></li>
+                    <li><a href="">Batman 2022</a></li>
+                    <li><a href="">Nga Anh Uc war</a></li>
+                </ul></li>
+            <li> 
+                <a href="">Thể loại</a>
+                <ul class ="menu_con">
+                    <li><a href="">Hành động</a></li>
+                    <li><a href="">tình cảm</a></li>
+                    <li><a href="">Kinh dị</a></li>
+                    <li><a href="">Khoa học</a></li>
+                    <li><a href="">Hài hước</a></li>
+                </ul>
+            </li>
+            <li> <a href="">Lịch chiếu</a>
+                <ul class ="menu_con">
+                    <li><a href="">Thứ 2</a></li>
+                    <li><a href="">Thứ 3</a></li>
+                    <li><a href="">Thứ 4</a></li>
+                    <li><a href="">Thứ 5</a></li>
+                    <li><a href="">Thứ 6</a></li>
+                    <li><a href="">Thứ 7</a></li>
+                    <li><a href="">Chủ Nhật</a></li>
+                </ul>
+            </li>
+            <li> <a href="">Đặt vé</a>
+                <ul class ="menu_con">
+                    <li><a href="">Theo ngày</a></li>
+                    <li><a href="">Theo rạp</a></li>
+                    <li><a href="">Theo giá</a></li>
+                </ul></li>
+            <li> <a href="">Sự kiện</a>
+                <ul class ="menu_con">
+                    <li><a href="">Khuyến mãi</a></li>
+                </ul></li></li>
+            <li> <a href="">Liên hệ</a>
+                <ul class ="menu_con">
+                    <li><a href="https://linktr.ee/Dinh_Quang_Hung" target="blank">Ceo_Quang Hưng</a></li>
+                </ul></li>
+                <label for="Tìm kiếm">
+                    <input type="text" placeholder="Tìm kiếm" id="timkiem">
+                   
+                </label>
+        </ul>
+    </div>
+    <!-- main_slider -->
+    <div class="main">
+        <ul class="title">
+            <li>
+                <h2 class="active" id="dang_chieu">Phim đang chiếu</h2> 
+                <h2 id="sap_chieu">Phim sắp chiếu</h2>
+                <h2 id="film_hot">Phim hot</h2>
+            </li>
+        </ul>
+        <div class="sildeshow">
+            <div class="slides">
+
+                <!-- <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster1..jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">MẮT BIẾC</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster2.jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">AVENGER AND GAME</h2>       
+                        </a>
+                        <div class="Ticket">
+                            <a href="">
+                                <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster3.jpg" alt="" height="400"> 
+                        <a href="">
+                            <h2 class="Ten_phim">CẬU VÀNG</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster4.jpg" alt=""  height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">THE CONJURING 3</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster5.jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">CHỊ CHỊ EM EM</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster6.jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">BATMAN</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster7.jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">TURNING RED</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster8.jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">NGƯỜI LẮNG NGHE</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="#">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="movie">
+                        <img src="./img/poster9.jpg" alt="" height="400">
+                        <a href="">
+                            <h2 class="Ten_phim">MOONFALL</h2>       
+                        </a>
+                    </div>
+                    <div class="Ticket">
+                        <a href="">
+                            <h2> <i class="fa fa-ticket"> ĐẶT VÉ </i></h2>
+                        </a>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    <div align ="center">
+        <img src="./img/textheader-01.png" alt="Không có ảnh">
+    </div>
+    <div id="backgound">
+        <video autoplay muted loop>
+            <source src="./video/video_backgound.mp4" type="video/mp4">
+        </video>
+    </div>
+<!-- main_khuyếnmãi -->
+    <div class="khuyen_mai">
+        <h1>CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+        <div class="khuyen_mai_cha">
+            <div class="khuyen_mai_con">
+                <img src="./img/km1.png" alt="">
+            </div>
+            <div class="khuyen_mai_con">
+                <img src="./img/km2.png" alt="">
+            </div>
+            <div class="khuyen_mai_con">
+                <img src="./img/km3.jpg" alt=""> 
+            </div>
+            <div class="khuyen_mai_con">
+                <img src="./img/km4.jpg" alt="">
+            </div>
+            <div class="khuyen_mai_con">
+                <img src="./img/km5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_left">
+                
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
